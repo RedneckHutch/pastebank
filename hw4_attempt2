@@ -1,0 +1,55 @@
+string = "Hannah! you need to go to the store"
+newString = string.split()
+count = 0
+
+tester = True
+
+
+def check(x=0, build="", buildCh=0):
+    # loops to check all the words
+    while x in range (len(newString)):
+        # def checkEnding():
+        if newString[x][-1] == "!":
+            tester = False
+            print(tester)
+            print("1")
+            build += newString[x] + " "
+            buildCh += len(newString[x])
+            print(buildCh)
+            x += 1
+
+        elif newString[x][-1] == "?":
+            tester = False
+            print(tester)
+            print("2")
+            build += newString[x] + " "
+            buildCh += len(newString[x])
+
+        elif newString[x][-1] == ".":
+            tester = False
+            print(tester)
+            print("3")
+            build += newString[x] + " "
+            buildCh += len(newString[x])
+
+        else:
+            tester = True
+            print(tester)
+            build += newString[x] + " "
+            buildCh += len(newString[x])
+            x += 1
+            print("4")
+        
+    else:
+        print("finished")
+
+    # this is capping the letter if needed and going to next word in sting
+
+    print(build)
+# main function to call all the other functions
+def main():
+    check()
+
+# needed
+if __name__ == "__main__":
+    main()
