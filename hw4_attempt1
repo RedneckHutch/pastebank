@@ -1,0 +1,66 @@
+string = "Hannah! you need to go to the store"
+newString = string.split()
+count = 0
+build = ""
+tester = True
+#def checkEnding():
+
+# print(newString)                #prints split string
+wordLength = (len(newString))   #gets the length of words in the string
+print(wordLength)               #prints word length
+print(newString[count])         #gets word in position of count
+# print(len(newString[count]))    #gets word in position of count length
+# print(newString[count][0])
+print(newString[0][-1])
+# newString[count][1].upper()
+print(wordLength)
+print(count)
+#while count = wordLength:
+     #print("het")
+for x in range (wordLength):
+    print("1111")
+    print(len([x]))
+    print("1111")
+    if (newString[count][-1] == "!"):
+         tester = False
+         print(tester)
+         #count += 1
+         #break
+    elif (newString[count][-1] == "?"):
+         tester = False
+         print(tester)
+         #count += 1
+         #break
+    elif (newString[count][-1] == "."):
+        tester = False
+        print(tester)
+        #count += 1
+    else:
+         tester = True
+         print(tester)
+         #count += 1
+    if tester:
+        print(tester)
+        build += (newString[x]+" ")
+        x += 1
+        #print(x)
+        print(newString[x][1].upper())
+    else:
+        print (tester)
+
+        letter = newString[x][1].upper()
+        print(newString[x])
+        build += (newString[x]+" ")
+        capthis = len(build) + 2
+        print(capthis)
+        #build[capthis]
+
+        #count += 1
+        #print(x)
+
+    print(build[capthis][1].upper()+ "Test")
+    build[capthis][1].upper()
+
+print(build)
+print(newString)
+print(build)
