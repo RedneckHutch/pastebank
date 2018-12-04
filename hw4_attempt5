@@ -1,0 +1,31 @@
+file_Sentence = open("sentences.txt","r+")
+string = "hannah! you need to go to the store"
+newString = string.split()
+count = 0
+tester = bool
+newWord: str=""
+build = ""
+
+for line in file_Sentence:
+    string = line
+    newString = string.split()
+    count = 0
+    tester = bool
+    newWord: str = ""
+    build = ""
+# loops to check all the words
+    for old in newString:
+    # def checkEnding():
+        if tester:
+            newWord = old[0].upper() + old[1:]
+        else:
+            newWord= old
+        build += newWord + " "
+
+        if old[-1] == "!" or old[-1] == "?" or old[-1] == ".":
+            tester = True
+        else:
+            tester = False
+    # this is capping the letter if needed and going to next word in sting
+
+    print(build)
